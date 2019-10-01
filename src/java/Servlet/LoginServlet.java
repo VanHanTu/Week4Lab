@@ -56,6 +56,7 @@ public class LoginServlet extends HttpServlet {
         else if(logout.equals(""))
         {
             session.invalidate();
+           
             getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
         
         }
